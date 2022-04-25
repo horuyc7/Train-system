@@ -48,6 +48,7 @@ public class ViewRoute extends javax.swing.JFrame {
         jTable3 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setLocation(new java.awt.Point(550, 550));
         addComponentListener(new java.awt.event.ComponentAdapter() {
             public void componentHidden(java.awt.event.ComponentEvent evt) {
                 formComponentHidden(evt);
@@ -187,7 +188,7 @@ public class ViewRoute extends javax.swing.JFrame {
         String password = "admin";
         String url = "jdbc:mysql://localhost:3306/project2";
         
-        String query = "SELECT * FROM route";
+        String query = "SELECT * FROM route WHERE Route_No IN (SELECT Route_No FROM route WHERE Length > 0)";
         
         Connection c=null;
         PreparedStatement st=null;
@@ -310,7 +311,7 @@ public class ViewRoute extends javax.swing.JFrame {
         String password = "admin";
         String url = "jdbc:mysql://localhost:3306/project2";
         
-        String query = "SELECT * FROM dockedatstation";
+        String query = "SELECT * FROM dockedatstation WHERE Station_No IN (SELECT Station_No FROM station)";
         
         Connection c=null;
         PreparedStatement st=null;
