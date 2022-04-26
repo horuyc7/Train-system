@@ -123,6 +123,9 @@ public class ViewPassenger extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        DefaultTableModel tblModel = (DefaultTableModel)jTable1.getModel();
+        tblModel.setRowCount(0);
+        
         String user = "root";
         String password = "admin";
         String url = "jdbc:mysql://localhost:3306/project2";
@@ -164,7 +167,6 @@ public class ViewPassenger extends javax.swing.JFrame {
 
                 
                 String tbData[] = {b, d ,e};
-                DefaultTableModel tblModel = (DefaultTableModel)jTable1.getModel();
                 
                 tblModel.addRow(tbData);
             }
@@ -176,6 +178,9 @@ public class ViewPassenger extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        DefaultTableModel tblModel = (DefaultTableModel)jTable2.getModel();
+        tblModel.setRowCount(0);
+        
         String user = "root";
         String password = "admin";
         String url = "jdbc:mysql://localhost:3306/project2";
@@ -216,7 +221,6 @@ public class ViewPassenger extends javax.swing.JFrame {
 
                 
                 String tbData[] = {b, d ,e};
-                DefaultTableModel tblModel = (DefaultTableModel)jTable2.getModel();
                 
                 tblModel.addRow(tbData);
             }
