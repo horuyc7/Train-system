@@ -52,7 +52,7 @@ public class ARRoute extends javax.swing.JFrame {
         setLocation(new java.awt.Point(550, 550));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel1.setText("Add / Remove Route");
+        jLabel1.setText("Add / Edit / Remove Route");
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel2.setText("Route #");
@@ -153,9 +153,9 @@ public class ARRoute extends javax.swing.JFrame {
                         .addComponent(jButton2)
                         .addContainerGap(73, Short.MAX_VALUE))))
             .addGroup(layout.createSequentialGroup()
-                .addGap(84, 84, 84)
+                .addGap(55, 55, 55)
                 .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

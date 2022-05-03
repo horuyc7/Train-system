@@ -190,7 +190,7 @@ public class Speed extends javax.swing.JFrame {
 
             if(st.executeUpdate() == 1)
             {
-                jLabel4.setText("Added Speed " + a + " to train " + b + "\n");
+                jLabel4.setText("Edited Train #" + b + " speed to " + a + "\n");
             }
             else
             {
